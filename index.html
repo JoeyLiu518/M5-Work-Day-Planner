@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"/>
+  
+    <!-- Link to jquery boostrap bundle-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- link to boostrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- link to moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <h2 id="date"></h2>
+    </header>
+    
+    <main class="container">
+      <!-- Timeblocks go here -->
+      <section class="row hour">
+  
+          <div class="col-md-3 d-flex align-items-center"><h3>9:00am</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center"> <input type="text" id="input-9am" data-timeIndex="9"> </div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="9amSvBtn"><button class="saveBtn">Save</button></div>
+        
+      </section>
+      
+      <section class="row hour">
+          
+          <div class="col-md-3 d-flex align-items-center"><h3>10:00am</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center"  data-timeIndex="10"> <input type="text" id="input-10am" data-timeIndex="10"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="10amSvBtn"><button class="saveBtn">Save</button></div>
+
+      </section>
+      
+      <section class="row hour">
+          
+          <div class="col-md-3 d-flex align-items-center"><h3>11:00am</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="11"> <input type="text" id="input-11am" data-timeIndex="11"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="11amSvBtn"><button class="saveBtn">Save</button></div>
+
+      </section>
+
+      <section class="row hour">
+       
+          <div class="col-md-3 d-flex align-items-center"><h3>12:00pm</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="12"> <input type="text" id="input-12pm" data-timeIndex="12"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="12pmSvBtn"><button class="saveBtn">Save</button></div>
+       
+      </section>
+
+        <section class="row hour">
+          
+            <div class="col-md-3 d-flex align-items-center"><h3>1:00pm</h3></div>
+            
+            <div class="col-md-6 d-flex align-items-center" data-timeIndex="13"> <input type="text" id="input-1pm" data-timeIndex="13"></div>
+            
+            <div class="col-md-3 d-flex align-items-center" id="1pmSvBtn"><button class="saveBtn">Save</button></div>
+          
+        </section>
+      
+
+      <section class="row hour">
+        
+          <div class="col-md-3 d-flex align-items-center"><h3>2:00pm<h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="14"> <input type="text" id="input-2pm" data-timeIndex="14"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="2pmSvBtn"><button class="saveBtn">Save</button></div>
+        
+      </section>
+
+      <section class="row hour">
+        
+          <div class="col-md-3 d-flex align-items-center"><h3>3:00pm</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="15"> <input type="text" id="input-3pm" data-timeIndex="15"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="3pmSvBtn"><button class="saveBtn">Save</button></div>
+       
+      </section>
+
+      <section class="row hour">
+        
+          <div class="col-md-3 d-flex align-items-center"><h3>4:00pm</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="16"> <input type="text" id="input-4pm" data-timeIndex="15"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="4pmSvBtn"><button class="saveBtn">Save</button></div>
+        
+      </section>
+
+      <section class="row hour">
+        
+          <div class="col-md-3 d-flex align-items-center"><h3>5:00pm</h3></div>
+          
+          <div class="col-md-6 d-flex align-items-center" data-timeIndex="17"> <input type="text" id="input-5pm" data-timeIndex="17"></div>
+          
+          <div class="col-md-3 d-flex align-items-center" id="5pmSvBtn"><button class="saveBtn">Save</button></div>
+       
+      </section>
+    
+
+    </main>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <script src ="script.js"></script>
+  </body>
+</html>
