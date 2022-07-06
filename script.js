@@ -33,7 +33,8 @@ var jq5pm = $(inputArray[8])
 
 // Have to create save button that allows user to save the value in local storage
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var nineam = '';
     console.log(input);
@@ -42,7 +43,8 @@ svBtn9am.on("click", function() {
     console.log(nineam)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var tenam = '';
     console.log(input);
@@ -51,7 +53,8 @@ svBtn9am.on("click", function() {
     console.log(tenam)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var elevenam = '';
     console.log(input);
@@ -60,7 +63,8 @@ svBtn9am.on("click", function() {
     console.log(elevenam)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var twelvepm = '';
     console.log(input);
@@ -69,7 +73,8 @@ svBtn9am.on("click", function() {
     console.log(twelvepm)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var onepm = '';
     console.log(input);
@@ -78,7 +83,8 @@ svBtn9am.on("click", function() {
     console.log(onepm)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var twopm = '';
     console.log(input);
@@ -87,7 +93,8 @@ svBtn9am.on("click", function() {
     console.log(twopm)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var threepm = '';
     console.log(input);
@@ -96,7 +103,8 @@ svBtn9am.on("click", function() {
     console.log(threepm)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var fourpm = '';
     console.log(input);
@@ -105,7 +113,8 @@ svBtn9am.on("click", function() {
     console.log(fourpm)
 })
 
-svBtn9am.on("click", function() {
+svBtn9am.on("click", function(event) {
+    event.preventDefault()
     var input = jq9am.val();
     var fivepm = '';
     console.log(input);
